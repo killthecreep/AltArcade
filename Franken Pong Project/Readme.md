@@ -2,8 +2,7 @@
 
 <h3> Created by: Sam Kasten </h3>
 
-<img src="Franken%20Pong%20Controller.jpg" alt="Franken Pong Project">
-
+<img src="Images/Franken%20Pong%20Controller.jpg" alt="Franken Pong Project">
 <h2>
     Concept
 </h2>
@@ -22,8 +21,7 @@ After settling on the creation of a Frankenstien inspired switch I went about de
 
 </p>
 
-<img src="Switch%20Sketch.png" alt="Sketch Designs for Controller" width="6200">
-
+<img src="Images/Switch%20Sketch.png" alt="Sketch Designs for Controller" width="6200">
 <p>
 Originally I wanted to use Neodynamic Magnets to not only conduct a current, but to create a good tactile feedback when the player "switches" the switch. These proved to be a problem when attempting to glue the magnets into the 3D printed PLA, as the magnets were too strong and ripped out of the plastic. Attempting to salvage the situation I resorted to embedding the magnets into the 3D print, unfortunately even with the smallest walls possible any gap in the magnets would result in lack of connectivity. Fortunately I was introduced to Copper Foil tape,this tape is conductive and able to be easily soldered to. This allowed easy conductivity to the printed components, including the connectors and the switch levers. The switch lever had this tape strategically placed in the middle, this was to ensure that when the levers were in the down position it would bridge the connection needed within the connectors.
 </p>
@@ -32,7 +30,7 @@ Originally I wanted to use Neodynamic Magnets to not only conduct a current, but
     The Controller
 </h2>
 
-<img src="Franken%20Pong%20Controller2.jpg" alt="Franken Pong Project">
+<img src="Images/Franken%20Pong%20Controller2.jpg" alt="Franken Pong Project">
 
 <p>
 The switch had two functions, to act as keyboard input, and to rumble for the tactile feedback. To accomplish this I was fortunate to be able to borrow a TinyCore ESP-32 S3 board, this board has HID or Human Interface Device capabilities. Using this board I was able to program it to act ask keyboard input, this allowed me to use Unreal Engines built-in keyboard input system. For the switch to actually send the input signal the TinyCore was wired to all four of the contacts, though only two of the contacts acted as data, one on each side, while the other two simply helped supply power to the rumble motor. 
